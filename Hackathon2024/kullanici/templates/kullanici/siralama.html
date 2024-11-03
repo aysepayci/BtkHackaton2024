@@ -1,0 +1,15 @@
+<!-- Şablonlar -->
+ <!-- kullanıcı sıralamasını göstermek için basit bir şablon oluşturalım. -->
+ <h2>Kullanıcı Sıralaması</h2>
+<table>
+    <tr>
+        <th>Kullanıcı</th>
+        <th>Puan</th>
+    </tr>
+    {% for profil in profiller %}
+    <tr>
+        <td>{{ profil.user.username }}</td>
+        <td>{{ profil.puan }}</td>
+    </tr>
+    {% endfor %}
+</table>
